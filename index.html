@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forex Trading Journal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📒 Forex Trading Journal</h1>
+
+<form id="tradeForm">
+  <input type="date" id="date" required>
+  <input type="text" id="pair" placeholder="EUR/USD" required>
+
+  <select id="type">
+    <option>BUY</option>
+    <option>SELL</option>
+  </select>
+
+  <input type="text" id="setup" placeholder="Setup">
+  <input type="text" id="timeframe" placeholder="Timeframe">
+
+  <input type="number" id="entry" placeholder="Entry" required>
+  <input type="number" id="sl" placeholder="Stop Loss" required>
+  <input type="number" id="target" placeholder="Target" required>
+  <input type="number" id="qty" placeholder="Lot Size" required>
+  <input type="number" id="exit" placeholder="Exit Price">
+
+  <input type="text" id="emotion" placeholder="Emotion">
+  <textarea id="notes" placeholder="Notes"></textarea>
+  <input type="text" id="screenshot" placeholder="Screenshot URL">
+
+  <button type="submit">Save Trade</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
