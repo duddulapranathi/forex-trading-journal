@@ -13,7 +13,7 @@ document.getElementById("tradeForm").addEventListener("submit", function(e) {
 
   let result = pl > 0 ? "WIN" : "LOSS";
 
-  fetch("YOUR_SCRIPT_URL_HERE", {
+  fetch("https://docs.google.com/spreadsheets/d/1whxQ0qrxqXWLRfVcYaP8d23fCRkH0mstgh8PxaHj8lI/edit?gid=0#gid=0", {
     method: "POST",
     body: JSON.stringify({
       date: date.value,
@@ -37,3 +37,4 @@ document.getElementById("tradeForm").addEventListener("submit", function(e) {
     document.getElementById("tradeForm").reset();
   });
 });
+
